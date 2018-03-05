@@ -6,7 +6,7 @@ Octrees is a method to partition a3-D spacebyrecursively subdividingit into eigh
 At depth=0, it is the original 3d structure,
 At depth=1, the original voxel was cut into eight pieces;
 At depth=2, the eight pieces were further cut into 64 smaller pieces.
-At depth=n, there would be $8^n$ much smaller voxels. <br />
+At depth=n, there would be 8^n much smaller voxels. <br />
 
 There are two ways of octree partition: equal and weighted. Equal means after each partition, the eight octant would have same volume, while weighted indicates same number of points for each octant. In this study, after trial and error, the weighted Octree method was chosen, and depths were set as 6 and 7 to create multiple scale voxels.
 
