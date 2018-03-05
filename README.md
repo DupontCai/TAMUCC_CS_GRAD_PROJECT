@@ -2,7 +2,12 @@
 
 # preparing features (implemented in MATLAB)
 1. OcTree.m for octree voxelization <br />
-2. features.m to create statistical features for each voxel, thus the resulting voxel would 13 features
+2. features.m to create <br />
+In this study, after trial and error, the weighted Octree method was chosen, and depths were set as 6 and 7 to create multiple scale voxels, results see Table~\ref{octree}. Then 5 statistics features for each of the large and small voxel size, including Standard deviation for Z, D, R, and principle component (PCA or curvature) 1 and 2  were calculated. Thus 10 more features were created, in addition to the z,d,r point features, there were 13 features to be fed into the modeling process, see Table~\ref{features}.
+
+To make the features of the same scale, the 13 features created were normalized by Z-score to be final inputs for modeling process. <br />
+
+The above processes were implemented in MATLAB 2016b in high performance cluster (HPC) at Texas A\&M University Corpus Christi. <br />
 
 
 # SOM modeling (implemented in R)
