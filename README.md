@@ -27,5 +27,7 @@ To examine the impact of different distance calcuation methods, models based on 
 5. eva_db_sombyR_k2to10.m & eva_db_sombyR_k2to10.m & eva_plot.R <br />
 For quantitative evaluation, Davies-Bouldin (DB) and Calinski Harabasz (CH) indexes were used to evaluate the intra-class similarities and inter-class differences among the clusters. Both DB and CH values are relative, but with the same data, the lower DB as well the Higher CH values indicate better clustering qualities, while the higher DB and the lower CH values suggests worse clustering qualities. results see ![alt text](https://github.com/DupontCai/TAMUCC_CS_GRAD_PROJECT/blob/master/eva_cal_db_dist5_k210.jpg)
 
-
+# Visualization (implemented in MATLAB)
+6. plot_withback_ground.m <br />
+3d plotting the clustering results for each models with xyz on the top of the background truth, the visulization help comparing the clustering qualities by comparing to the background truth.
 
